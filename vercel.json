@@ -1,0 +1,8 @@
+{
+    "build": {
+      "env": {
+        "CI": "false",
+        "NPM_CONFIG_UNSAFE_PERM": "true"
+      }
+    }
+  }
