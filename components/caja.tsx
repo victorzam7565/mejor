@@ -7,8 +7,8 @@ import  Container  from '@material-ui/core/Container';
 import Togle from './togle';
 import ToggleButton from '@mui/material/ToggleButton';
 import MyForm from './form2';
-import MyForm2 from './form3';
-import Grid from '@material-ui/core/Grid';
+import Link from 'next/link';
+
 import { height } from '@mui/system';
 export default function Caja() {
     return (
@@ -31,12 +31,24 @@ justifyContent='center' height="auto">
 {/*caja de botones*/}
 <Box position="relative" display="flex" flexDirection="row" justifyContent="space-between">
 <Box style={{ position: 'relative', top: 30, left: 1, bottom: 50, }} overflow="auto"> 
-<Button variant="contained" >Get the Code -> </Button> 
+<Button variant="contained" >Get the Code - </Button> 
 </Box>
 <Box style={{position: 'relative', top:30, left: 400 }}>
 <Togle></Togle>
 </Box>
-<Box style={{ position: 'relative',top:30, right:12 }}> <ToggleButton> <LaunchIcon/></ToggleButton></Box >
+<Box style={{ position: 'relative',top:30, right:12 }}> 
+
+
+<ToggleButton
+      value="check"
+    >
+      <LaunchIcon></LaunchIcon>
+    </ToggleButton>
+
+
+
+
+    </Box >
 </Box>
 
 <Box style={{ position: 'relative',top:45}}>
